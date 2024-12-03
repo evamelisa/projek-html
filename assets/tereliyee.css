@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20;
+    background-color: #eaeff1;
+    line-height: 1.6;
+}
+
+header {
+    background: rgb(31, 117, 45);
+    color: white; 
+    padding: 10px;
+    text-align: center;   
+}
+
+h1 {
+    font-family: mideo;
+    font-size: 4em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 300px;
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    border-left: 5px solid #346a97; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    right: 20px; 
+    top: 0; 
+    box-sizing: border-box;
+}
+
+aside article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+aside figure {
+    margin: 0;
+    padding: 0;
+}
+
+aside img {
+    width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px;
+}
+
+
+aside h3 {
+    margin-top: 10px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+aside section {
+    text-align: left;
+    font-size: 1.1em;
+    color: #555;
+}
+
+aside section p {
+    margin: 5px 0;
+}
+
+aside section b {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #222;
+}
+
+.karya-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.novel {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 30%; 
+    max-width: 300px;
+    text-align: center;
+}
+
+.novel img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .content {
+        margin-right: 0;
+    }
+}
